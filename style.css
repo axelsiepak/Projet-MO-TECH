@@ -152,6 +152,14 @@ border-radius: 1rem 1rem 0 0;
 .top10MainCardGrade {
     margin: 0 0.75rem 0.25rem 0.75rem;
 }
+/* ICON */
+.icon {
+    display: inline-block;
+    box-sizing: content-box;
+    height: 1em;
+    vertical-align: -0.125em;
+    fill: currentColor;
+}
 .top10MainCardGradeIcon[data-active="true"] {
     color: green;
 }
