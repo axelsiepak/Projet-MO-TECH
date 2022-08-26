@@ -18,24 +18,11 @@ a {
     max-width: 1440px;
     margin: auto;
 }
-.headerDivBrand {
-    align-items: stretch;
-    display: flex;
-    flex-shrink: 0;
-    max-height: 89px;
-}
-.headerLinkHome {
-    flex-grow: 0;
-    flex-shrink: 0;
-    box-sizing: inherit;
-} 
-
 .headerImg {
     grid-area: logo;
     padding: 0 8px 0 2rem;
     height: 65px;
 }
-
 .headerNav {
     display: flex;
     align-items: center;
@@ -69,49 +56,47 @@ a {
         grid-template-columns: auto 1fr auto auto;
         grid-template-areas: "logo . navbar button";
     }
-
     .headerNavLink[data-active=true] {
         border-top: 3px solid green;
     }
-
     .headerNavLink:hover {
         border-top: 3px solid green;
     }
 }
-
 @media screen and (max-width: 600px) {
     .header {
         grid-template-columns: auto 1fr auto;
         grid-template-areas: "logo . button""navbar navbar navbar";
     }
-
     .headerimg {
         order: 0;
     }
-
     .headerSignup {
         order: 1;
     }
-
     .headerNav {
         order: 2;
     }
-
     .headerNavLink {
         border-top: none;
         border-bottom: 3px solid #F2F2F2;
         width: 50%;
     }
-
     .headerNavLink[data-active=true] {
         border-bottom-color: green;
     }
-
     .headerNavLink:hover {
         border-bottom-color: green;
     }
 }
 
+ /* MAIN */
+.main {
+    max-width: 1440px;
+    margin: auto;
+    padding: 0 2rem;
+    box-sizing: border-box;
+}
 /* TOP10 */
 .top10Popular, .top10Main {
     background-color: #F2F2F2;
